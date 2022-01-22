@@ -1,0 +1,42 @@
+<section>  
+    <div class="my-reg-grid">
+      <!-- payment paragraph -->
+      <div class="left-reg">
+        <%- include ('./partials/sidebar') %>
+      </div>
+      
+      <div class="right-reg">
+        
+        <div class="form-center">
+          <!-- <a href="/"><img class="my-logo my-nav-brand" src="/img/icons/logo2.png"></a> -->
+          <div class="my-gap mt-4">
+            <%- include ('./partials/messages') %>
+          </div>
+          <form class="row g-3"  action="/auth/forgot" method="POST">
+
+
+    
+
+            <div class="col-md-12">
+                <input
+                type="email" id="email" name="email" placeholder="Enter Email" 
+                  
+                  class="my-form-control"
+                 
+                 
+                />
+              </div>
+
+            <div class="col-12">
+              <button type="submit" class="my-btn-bg" style="width: 100%">
+                Send Email
+              </button>
+            </div>
+            <p class="reg-link"> Remember your password?  click <a href="/auth/login" >Login</a></p>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

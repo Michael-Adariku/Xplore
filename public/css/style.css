@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none !important;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666666;
+}
+
+
+
+input,
+textarea {
+  outline-color: #333333;
+}
+
+iframe {
+  /* border: none !important; */
+  border: 1px solid red;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.hover-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hover-img img {
+  width: 100%;
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+}
+
+.hover-img:hover img {
+  transform: scale(1.1);
+}
+
+.larg-text {
+  font-size: 50px;
+  color: #333333;
+}
+
+.medium-text-2 {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.medium-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: #666666;
+  letter-spacing: 1.5px;
+}
+.my-small-text {
+  text-decoration: none;
+  color: #666666;
+}
+.my-small-text:hover {
+  text-decoration: none;
+  color: #666666;
+}
+.white-text h2,
+p {
+  color: #ffff;
+}
+
+
+.my-form {
+  margin-top: 20px;
+}
+.my-form-control {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  padding:12px 10px;
+  margin-bottom: 10px;
+}
+.my-form-control:focus {
+  transition: .2s ease-in-out;
+  border: 1px solid #25d1f3;
+  outline: none;
+}
+
+.price-tag {
+  border: 2px solid green;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 8px;
+  color: #333;
+  background-color: transparent;
+}
+.price-tag span {
+  color: #333;
+}
+.price-tag:active {
+  transform: scale(0.98);
+}
+.price-tag-input {
+  margin-bottom: 10px;
+  border: 2px solid green;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 8px;
+  color: #333;
+  background-color: transparent;
+}
+.price-tag-input:focus {
+  outline: none;
+  background-color: transparent;
+}
+.price-tag-input:active {
+  transform: scale(0.98);
+}
+
+/*------------------------------------------------------------------- food menu ---*/
+.nav-tabs .nav-link {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-link {
+  display: inline;
+  padding: 0;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #e52233 !important;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+
+.title-l {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.3;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.title-s {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 2.2;
+  color: #c6c6c6;
+  margin-top: 18px;
+  margin-bottom: 0px;
+}
+
+.pad-bt-80 {
+  padding-bottom: 80px;
+}
+

@@ -1,0 +1,128 @@
+
+
+<section>
+  <div class="my-reg-grid">
+       <!-- left -->
+       <div class="left-reg">
+       <%- include ('./partials/sidebar') %>
+      </div>
+            <!-- left end here -->
+            <div class="right-reg">
+      
+              <div class="form-center">
+                    <!-- <a href="/"><img class="my-logo my-nav-brand" src="/img/icons/logo2.png"></a> -->
+                    <div class="my-gap mt-4">
+                      <%- include ('./partials/messages') %>
+                    </div>
+                      
+                    <form class="row g-2 my-margin" action="/auth/register" method="POST">
+                
+                      <div class="col-md-12">
+                        <input
+                          type="text"
+                          class="my-form-control"
+                          id="inputName"
+                          name="name"
+                          placeholder="First Name"
+                          value="<%= typeof name != 'undefined' ? name : '' %>"
+                        />
+                      </div>
+
+                      <div class="col-md-12">
+                        <input
+                          type="text"
+                          class="my-form-control"
+                          id="inputName"
+                          name="lname"
+                          placeholder="Last Name"
+                          value="<%= typeof name != 'undefined' ? name : '' %>"
+                        />
+                      </div>
+                    
+                      <div class="col-md-12">
+                        <input
+                          type="email"
+                          class="my-form-control"
+                          id="registerEmail"
+                          name="email"
+                          placeholder="Enter email"
+                          value="<%= typeof email != 'undefined' ? email : '' %>"
+                        />
+                      </div>
+                      
+                      <div class="col-md-12">
+                        <input
+                          type="password"
+                          class="my-form-control"
+                          id="password"
+                          name="password"
+                          placeholder="Enter password"
+                          value="<%= typeof password != 'undefined' ? password : '' %>"
+                        />
+                      </div>
+                    
+                      <div class="col-md-12">
+                        <input
+                          type="password"
+                          class="my-form-control"
+                          id="password2"
+                          name="password2"
+                          placeholder="Repeat password"
+                          value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+                        />
+                      </div>
+                    
+                      <div class="col-md-12 ">
+                        <select id="inputState" name="category" class="my-form-control">
+                          <option selected>Category</option>
+                          <option>Dancing</option>
+                          <option>Singing</option>
+                          <option>Rap and Poetry</option>
+                        </select>
+                      </div> 
+                    <div class="col-md-6">
+                        <select  class="my-form-control" name="state" id="slct1"  onchange="populate(this.id, 'slct2')">
+                          <option value="" selected>Choose State</option>
+                          <option value="Abuja">Abuja</option>
+                          <option value="Akwa Ibom">Akwa Ibom</option>
+                          <option value="Cross River">Cross River</option>
+                          <option value="Lagos">Lagos</option>
+                          <option value="Port Harcourt">Port Harcourt</option>
+                        </select>
+                    </div> 
+                    
+                      <div class="col-md-6">
+                        <select name="lga" id="slct2" class="my-form-control">
+                        </select>
+                      </div> 
+                    
+                    
+                    
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="checkbox"
+                            id="gridCheck"
+                          />
+                          <label class="form-check-label" for="gridCheck">
+                            Agree with terms and conditions
+                          </label>
+                        </div>
+                      </div>
+                    
+                      <div class="col-12">
+                        <button type="submit" class="my-btn-bg" style="width: 100%;">
+                          Register
+                        </button>
+                      </div>
+                    
+                    </form>
+                    <p class="reg-link">Already hava an acount? <a href="/auth/login">Login</a></p>
+            </div>   
+               
+    
+  </div>
+  </div>
+</section>

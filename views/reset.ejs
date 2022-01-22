@@ -1,0 +1,54 @@
+<section>  
+    <div class="my-reg-grid">
+      <!-- payment paragraph -->
+      <div class="left-reg">
+        <%- include ('./partials/sidebar') %>
+      </div>
+      
+      <div class="right-reg">
+        
+        <div class="form-center">
+          <!-- <a href="/"><img class="my-logo my-nav-brand" src="/img/icons/logo2.png"></a> -->
+          <div class="my-gap mt-4">
+            <%- include ('./partials/messages') %>
+          </div>
+          <form class="row g-3" action="/auth/reset/<%= id %>" method="POST">
+
+
+            <!-- password -->
+            <div class="col-md-12">
+              <input
+                type="password"
+                class="my-form-control"
+                id="password"
+                name="password"
+                placeholder="password"
+                value="<%= typeof password != 'undefined' ? password : '' %>"
+              />
+            </div>
+
+            <div class="col-md-12">
+                <input
+                  type="password"
+                  class="my-form-control"
+                  id="password2"
+                  name="password2"
+                  placeholder="Confirm password"
+                  value="<%= typeof password2 != 'undefined' ? password2 : '' %>" 
+                />
+              </div>
+
+            <div class="col-12">
+              <button type="submit" class="my-btn-bg" style="width: 100%">
+                Enter Your Ego
+              </button>
+            </div>
+            <p class="mt-4">
+                Remember your password? <a href="/auth/login">Login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
