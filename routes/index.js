@@ -27,6 +27,10 @@ router.get('/team', (req, res) => res.render('team', {
   title: 'The Team'
 }));
 
+router.get('/booking', (req, res) => res.render('booking', {
+  title: 'our booking'
+}));
+
 router.get('/ibeno-overview', (req, res) => {
   res.render('ibenoOverview', {
     title:'ibeno beach'

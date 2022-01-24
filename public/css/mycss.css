@@ -7,6 +7,14 @@
   position: fixed;
   z-index: 100 ;
 }
+
+.form-area {
+  margin: 100px 0;
+ 
+}
+.form-area  p {
+  color: #333;
+}
 .expericence{
   margin-top: 90px;
   margin-bottom: 50px;

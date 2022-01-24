@@ -1,0 +1,89 @@
+<%- include('./partials/navigation') %>
+
+<!-- Banner Start -->
+        <div class="banner">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2>Join the next trip at a <span>Special</span> Price</h2>
+            </div>
+            <div class="container banner-text">
+              <p>
+                Enter credentials and proceed to the checkout.
+              </p>
+              
+              <!-- <a class="my-btn">Buy ticket</a> -->
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-area">
+        <div class="container ">
+            <div class="row">  
+                <div class="col-md-6">
+                  <div class="my-gap mt-4">
+                    <%- include ('./partials/messages') %>
+                  </div>
+                  <form action="#">
+                    <div class="col-md-12">
+                        <input
+                          type="text"
+                          class="my-form-control"
+                          id="inputName"
+                          name="name"
+                          placeholder="First Name"
+                          value="<%= typeof name != 'undefined' ? name : '' %>"
+                        />
+                      </div>
+
+                      <div class="col-md-12">
+                        <input
+                          type="text"
+                          class="my-form-control"
+                          id="inputName"
+                          name="lname"
+                          placeholder="Last Name"
+                          value="<%= typeof name != 'undefined' ? name : '' %>"
+                        />
+                      </div>
+                    
+                      <div class="col-md-12">
+                        <input
+                          type="email"
+                          class="my-form-control"
+                          id="registerEmail"
+                          name="email"
+                          placeholder="Enter email"
+                          value="<%= typeof email != 'undefined' ? email : '' %>"
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <input
+                          type="number"
+                          class="my-form-control"
+                          id="phone"
+                          name="phone"
+                          placeholder="Enter phone"
+                          value="<%= typeof phone != 'undefined' ? phone : '' %>"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="my-btn-2" style="width: 100%;">
+                         Book
+                        </button>
+                      </div>
+                </form>
+                </div>
+                <div class="col-md-6">
+                  <p>Add your personal touch to one of our ready-to-bok adventures and enjoy a tours focused solely on your travel group
+                    . Whether you you climb a volcano with your own guide or soar throught the sky in a hot air balloon, the world is yours
+                    on a private tour. <br> 
+                    if you're looking to book a tour for four people or more, send us a mesage and we'l so the hard work for you! <br> <br>
+                   
+                  </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+<%- include('./partials/footer') %>
